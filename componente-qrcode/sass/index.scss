@@ -1,0 +1,70 @@
+$clr-page: hsl(212, 45%, 89%);
+$clr-card: hsl(0, 0%, 100%);
+$clr-title: hsl(218, 44%, 22%);
+$clr-paragraph: hsl(220, 15%, 55%);
+
+$padding-16: 1rem;
+$padding-24: 1.5rem;
+
+$border-radius-card: 1.25rem;
+$border-radius-img: 0.625rem;
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+@mixin default-font {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  letter-spacing: 0.005rem;
+  color: $clr-paragraph;
+}
+@mixin title-font {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: $clr-title;
+}
+@mixin card {
+  background-color: $clr-card;
+  max-width: 20rem;
+  padding: $padding-16;
+  border-radius: $border-radius-card;
+}
+@mixin img {
+  max-width: 18rem;
+  max-height: 18rem;
+  border-radius: $border-radius-img;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include flex;
+  @include default-font;
+  background-color: $clr-page;
+  text-align: center;
+}
+
+.card {
+  @include card;
+}
+
+img {
+  @include img;
+}
+
+.text-area {
+  padding: $padding-24 $padding-16;
+}
+
+.title {
+  @include title-font;
+  padding-bottom: $padding-16;
+}
