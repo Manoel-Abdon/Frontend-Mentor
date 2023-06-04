@@ -38,25 +38,25 @@ img {
   font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.3125rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
 }
 .content h1 {
   font-family: "Fraunces", sans-serif;
   color: hsl(212, 21%, 14%);
   font-size: 2rem;
   line-height: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .content p {
   line-height: 1.4375rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .content ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1.25rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.75rem;
 }
 .content button {
   font-family: "Montserrat", sans-serif;
